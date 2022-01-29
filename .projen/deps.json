@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@types/fs-extra",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -20,13 +24,21 @@
       "type": "build"
     },
     {
+      "name": "@wheatstalk/cdk8s-self-cleanup",
+      "type": "build"
+    },
+    {
+      "name": "cdk8s-cli",
+      "type": "build"
+    },
+    {
       "name": "cdk8s",
-      "version": "1.4.10",
+      "version": "2.0.0",
       "type": "build"
     },
     {
       "name": "constructs",
-      "version": "3.3.196",
+      "version": "10.0.0",
       "type": "build"
     },
     {
@@ -44,6 +56,10 @@
     {
       "name": "eslint",
       "version": "^8",
+      "type": "build"
+    },
+    {
+      "name": "got",
       "type": "build"
     },
     {
@@ -90,17 +106,34 @@
       "type": "build"
     },
     {
+      "name": "ts-node",
+      "type": "build"
+    },
+    {
       "name": "typescript",
       "type": "build"
     },
     {
+      "name": "esbuild",
+      "type": "bundled"
+    },
+    {
+      "name": "execa",
+      "version": "^4",
+      "type": "bundled"
+    },
+    {
+      "name": "fs-extra",
+      "type": "bundled"
+    },
+    {
       "name": "cdk8s",
-      "version": "^1.4.10",
+      "version": "^2.0.0",
       "type": "peer"
     },
     {
       "name": "constructs",
-      "version": "^3.3.196",
+      "version": "^10.0.0",
       "type": "peer"
     }
   ],

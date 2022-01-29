@@ -129,6 +129,71 @@
         }
       ]
     },
+    "integ:main:assert": {
+      "name": "integ:main:assert",
+      "description": "assert the snapshot of integration test 'main'",
+      "steps": [
+        {
+          "exec": "[ -d \"test/main.integ.snapshot\" ] || (echo \"No snapshot available for integration test 'main'. Run 'projen integ:main:deploy' to capture.\" && exit 1)"
+        },
+        {
+          "exec": "cdk8s synth --app \"ts-node -P tsconfig.dev.json test/main.integ.ts\" -o test/.tmp/main.integ/synth.cdk.out > /dev/null"
+        },
+        {
+          "exec": "diff test/main.integ.snapshot/ test/.tmp/main.integ/synth.cdk.out/"
+        }
+      ]
+    },
+    "integ:main:deploy": {
+      "name": "integ:main:deploy",
+      "description": "deploy integration test 'main' and capture snapshot",
+      "steps": [
+        {
+          "exec": "rm -fr test/.tmp/main.integ/deploy.cdk.out"
+        },
+        {
+          "exec": "cdk8s synth --app \"ts-node -P tsconfig.dev.json test/main.integ.ts\" -o test/.tmp/main.integ/deploy.cdk.out"
+        },
+        {
+          "exec": "kubectl apply -f test/.tmp/main.integ/deploy.cdk.out"
+        },
+        {
+          "exec": "rm -fr test/main.integ.snapshot"
+        },
+        {
+          "exec": "mv test/.tmp/main.integ/deploy.cdk.out test/main.integ.snapshot"
+        }
+      ]
+    },
+    "integ:main:destroy": {
+      "name": "integ:main:destroy",
+      "steps": [
+        {
+          "exec": "kubectl delete all -l self-cleanup"
+        }
+      ]
+    },
+    "integ:main:snapshot": {
+      "name": "integ:main:snapshot",
+      "description": "update snapshot for integration test \"main\"",
+      "steps": [
+        {
+          "exec": "rm -fr test/main.integ.snapshot"
+        },
+        {
+          "exec": "cdk8s synth --app \"ts-node -P tsconfig.dev.json test/main.integ.ts\" -o test/main.integ.snapshot"
+        }
+      ]
+    },
+    "integ:snapshot-all": {
+      "name": "integ:snapshot-all",
+      "description": "update snapshot for all integration tests",
+      "steps": [
+        {
+          "spawn": "integ:main:snapshot"
+        }
+      ]
+    },
     "package": {
       "name": "package",
       "description": "Creates the distribution package",
@@ -212,6 +277,9 @@
         },
         {
           "spawn": "eslint"
+        },
+        {
+          "spawn": "integ:main:assert"
         }
       ]
     },
@@ -274,7 +342,7 @@
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdk8s constructs eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii jsii-diff jsii-docgen json-schema npm-check-updates standard-version ts-jest typescript cdk8s constructs"
+          "exec": "yarn upgrade @types/fs-extra @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @wheatstalk/cdk8s-self-cleanup cdk8s-cli cdk8s constructs eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint got jest jest-junit jsii jsii-diff jsii-docgen json-schema npm-check-updates standard-version ts-jest ts-node typescript esbuild execa fs-extra cdk8s constructs"
         },
         {
           "exec": "npx projen"
