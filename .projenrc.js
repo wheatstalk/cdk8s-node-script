@@ -28,8 +28,4 @@ const project = new cdk8s.ConstructLibraryCdk8s({
 
 project.addGitIgnore('/.idea');
 
-project.addTask('integ:main:destroy', {
-  exec: 'kubectl delete all -l self-cleanup',
-});
-
 project.synth();
