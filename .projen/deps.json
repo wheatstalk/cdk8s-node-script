@@ -28,10 +28,6 @@
       "type": "build"
     },
     {
-      "name": "cdk8s-cli",
-      "type": "build"
-    },
-    {
       "name": "cdk8s",
       "version": "2.0.0",
       "type": "build"
@@ -103,10 +99,6 @@
     },
     {
       "name": "ts-jest",
-      "type": "build"
-    },
-    {
-      "name": "ts-node",
       "type": "build"
     },
     {
