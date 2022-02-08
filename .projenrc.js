@@ -36,4 +36,8 @@ const project = new cdk8s.ConstructLibraryCdk8s({
 
 project.addGitIgnore('/.idea');
 
+project.upgradeWorkflow.postUpgradeTask.spawn(
+  project.tasks.tryFind('integ:snapshot-all'),
+);
+
 project.synth();
