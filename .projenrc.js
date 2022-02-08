@@ -1,4 +1,4 @@
-const { cdk8s } = require('projen');
+const { cdk8s, javascript } = require('projen');
 
 const project = new cdk8s.ConstructLibraryCdk8s({
   name: '@wheatstalk/cdk8s-node-script',
@@ -6,6 +6,7 @@ const project = new cdk8s.ConstructLibraryCdk8s({
   authorAddress: 'joshkellendonk@gmail.com',
   repositoryUrl: 'https://github.com/wheatstalk/cdk8s-node-script.git',
   description: 'CDK8s construct to run one-off scripts in your Kubernetes cluster',
+  npmAccess: javascript.NpmAccess.PUBLIC,
 
   cdk8sVersion: '2.0.0',
   constructsVersion: '10.0.0',
