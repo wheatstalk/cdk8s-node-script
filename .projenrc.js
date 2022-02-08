@@ -11,6 +11,14 @@ const project = new cdk8s.ConstructLibraryCdk8s({
   constructsVersion: '10.0.0',
   defaultReleaseBranch: 'main',
 
+  autoApproveUpgrades: true,
+  autoApproveOptions: {
+    allowedUsernames: ['misterjoshua'],
+  },
+  depsUpgradeOptions: {
+    ignoreProjen: false,
+  },
+
   deps: [],
 
   bundledDeps: [
