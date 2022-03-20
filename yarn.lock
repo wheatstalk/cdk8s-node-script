@@ -994,10 +994,10 @@
     "@typescript-eslint/types" "5.15.0"
     eslint-visitor-keys "^3.0.0"
 
-"@wheatstalk/cdk8s-self-cleanup@^0.0.57":
-  version "0.0.57"
-  resolved "https://registry.yarnpkg.com/@wheatstalk/cdk8s-self-cleanup/-/cdk8s-self-cleanup-0.0.57.tgz#ac264a4cb5bec22c58c29ff68804307d7a4f8110"
-  integrity sha512-2js9MRZuYqtoSw2INAMXDibEi4pe6Xj/BELWso468VzTfc3ZL0eKW6HpvIK7IX2e8EGRbu6NSElzEl7Y7WtC0A==
+"@wheatstalk/cdk8s-self-cleanup@^0.0.58":
+  version "0.0.58"
+  resolved "https://registry.yarnpkg.com/@wheatstalk/cdk8s-self-cleanup/-/cdk8s-self-cleanup-0.0.58.tgz#8cd0af5178e6cf5f956e586e0e3abd243f5cfa6e"
+  integrity sha512-kVSoL3wJilDj+EWYCCT4x94oaQrSU+klh62UqXvJ27OnPKa2OqOrShf2jZ0kj1UMglQO8ojC4bYWfI4sZU1nbw==
 
 "@xmldom/xmldom@^0.8.1":
   version "0.8.1"
@@ -1460,9 +1460,9 @@ camelcase@^6.2.0, camelcase@^6.3.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001317:
-  version "1.0.30001317"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001317.tgz#0548fb28fd5bc259a70b8c1ffdbe598037666a1b"
-  integrity sha512-xIZLh8gBm4dqNX0gkzrBeyI86J2eCjWzYAs40q88smG844YIrN4tVQl/RhquHvKEKImWWFIVh1Lxe5n1G/N+GQ==
+  version "1.0.30001319"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001319.tgz#eb4da4eb3ecdd409f7ba1907820061d56096e88f"
+  integrity sha512-xjlIAFHucBRSMUo1kb5D4LYgcN1M45qdKP++lhqowDpwJwGkpIRTt5qQqnhxjj1vHcI7nrJxWhCC1ATrCEBTcw==
 
 case@^1.6.3:
   version "1.6.3"
