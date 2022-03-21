@@ -45,7 +45,7 @@
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "@wheatstalk/cdk8s-self-cleanup": "^0.0.58",
+    "@wheatstalk/cdk8s-self-cleanup": "^0.0.59",
     "cdk8s": "2.0.0",
     "cdk8s-cli": "^1.0.128",
     "constructs": "10.0.0",
