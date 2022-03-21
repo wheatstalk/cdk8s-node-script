@@ -747,9 +747,9 @@
   integrity sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.14":
-  version "7.1.18"
-  resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.18.tgz#1a29abcc411a9c05e2094c98f9a1b7da6cdf49f8"
-  integrity sha512-S7unDjm/C7z2A2R9NzfKCK1I+BAALDtxEmsJBwlB3EzNfb929ykjL++1CK9LO++EIp2fQrC8O+BwjKvz6UeDyQ==
+  version "7.1.19"
+  resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.19.tgz#7b497495b7d1b4812bdb9d02804d0576f43ee460"
+  integrity sha512-WEOTgRsbYkvA/KCsDwVEGkd7WAr1e3g31VHQ8zy5gul/V1qKullU/BU5I68X5v7V3GnB9eotmom4v5a5gjxorw==
   dependencies:
     "@babel/parser" "^7.1.0"
     "@babel/types" "^7.0.0"
@@ -994,10 +994,10 @@
     "@typescript-eslint/types" "5.15.0"
     eslint-visitor-keys "^3.0.0"
 
-"@wheatstalk/cdk8s-self-cleanup@^0.0.58":
-  version "0.0.58"
-  resolved "https://registry.yarnpkg.com/@wheatstalk/cdk8s-self-cleanup/-/cdk8s-self-cleanup-0.0.58.tgz#8cd0af5178e6cf5f956e586e0e3abd243f5cfa6e"
-  integrity sha512-kVSoL3wJilDj+EWYCCT4x94oaQrSU+klh62UqXvJ27OnPKa2OqOrShf2jZ0kj1UMglQO8ojC4bYWfI4sZU1nbw==
+"@wheatstalk/cdk8s-self-cleanup@^0.0.59":
+  version "0.0.59"
+  resolved "https://registry.yarnpkg.com/@wheatstalk/cdk8s-self-cleanup/-/cdk8s-self-cleanup-0.0.59.tgz#2591f6cc9bfcdb7551a81891866b298db6a070b4"
+  integrity sha512-QU2UmE4I4Lknacha5htcMVr9OqhdP3n3MV3/TGjEhvxAJnrIsBXfaRJcjh1VkkhmTuYAt+7AEcB83+JOqfgnsw==
 
 "@xmldom/xmldom@^0.8.1":
   version "0.8.1"
