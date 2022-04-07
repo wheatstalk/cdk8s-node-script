@@ -45,7 +45,7 @@
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "@wheatstalk/cdk8s-self-cleanup": "^0.0.75",
+    "@wheatstalk/cdk8s-self-cleanup": "^0.0.76",
     "cdk8s": "2.0.0",
     "cdk8s-cli": "^1.0.143",
     "constructs": "10.0.0",
@@ -62,7 +62,7 @@
     "jsii-pacmak": "^1.55.1",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
-    "projen": "^0.54.7",
+    "projen": "^0.54.10",
     "standard-version": "^9",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
@@ -73,7 +73,7 @@
     "constructs": "^10.0.0"
   },
   "dependencies": {
-    "esbuild": "^0.14.31",
+    "esbuild": "^0.14.32",
     "execa": "^4",
     "fs-extra": "^10.0.1"
   },
