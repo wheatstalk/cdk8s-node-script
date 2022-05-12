@@ -41,11 +41,11 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
-    "@types/jest": "^27.5.0",
+    "@types/jest": "^27.5.1",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "@wheatstalk/cdk8s-self-cleanup": "^0.0.109",
+    "@wheatstalk/cdk8s-self-cleanup": "^0.0.110",
     "cdk8s": "2.0.0",
     "cdk8s-cli": "^1.0.164",
     "constructs": "10.0.0",
@@ -62,7 +62,7 @@
     "jsii-pacmak": "^1.58.0",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
-    "projen": "^0.56.3",
+    "projen": "^0.56.4",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.7.0",
@@ -73,7 +73,7 @@
     "constructs": "^10.0.0"
   },
   "dependencies": {
-    "esbuild": "^0.14.38",
+    "esbuild": "^0.14.39",
     "execa": "^4",
     "fs-extra": "^10.1.0"
   },
