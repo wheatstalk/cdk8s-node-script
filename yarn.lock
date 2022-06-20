@@ -1036,10 +1036,10 @@
     "@typescript-eslint/types" "5.28.0"
     eslint-visitor-keys "^3.3.0"
 
-"@wheatstalk/cdk8s-self-cleanup@^0.0.144":
-  version "0.0.144"
-  resolved "https://registry.yarnpkg.com/@wheatstalk/cdk8s-self-cleanup/-/cdk8s-self-cleanup-0.0.144.tgz#fa4b140343ee1779e3ee0952507b328e02bef044"
-  integrity sha512-Ae5ZGx/5r2Usd0gTXrn229wQt8LLTABcOOhdf+7dWTZddSnrZPB1yMV2+ULh8cukFNDzjDRzp6ThUiVKJKX5Pg==
+"@wheatstalk/cdk8s-self-cleanup@^0.0.145":
+  version "0.0.145"
+  resolved "https://registry.yarnpkg.com/@wheatstalk/cdk8s-self-cleanup/-/cdk8s-self-cleanup-0.0.145.tgz#96b6a4468bf473366f40e37af5977afb636ee107"
+  integrity sha512-XRj1d/GnL8ELi3+suaOvSlXCKEAXpVI322K3LbcUdgmHSAUeidt8W0ER7JHoUbqbZaPReI1FGtCKwioy1SlnHQ==
 
 "@xmldom/xmldom@^0.8.2":
   version "0.8.2"
@@ -1554,9 +1554,9 @@ cdk8s-cli@^1.1.31:
     yargs "^15"
 
 cdk8s-plus-22@^2.0.0-rc.21:
-  version "2.0.0-rc.22"
-  resolved "https://registry.yarnpkg.com/cdk8s-plus-22/-/cdk8s-plus-22-2.0.0-rc.22.tgz#72bb4d5413742628cb5b2ccc10678c398add8c90"
-  integrity sha512-l1Mn6jk+LtLwm07MRoPjrZPX/IWeJPWJFEk1RSq3wddbvyWW/Y07ADNvkUTrUz3yAvKB2NyPz0FAr6mpLsXfMg==
+  version "2.0.0-rc.23"
+  resolved "https://registry.yarnpkg.com/cdk8s-plus-22/-/cdk8s-plus-22-2.0.0-rc.23.tgz#de70c6f6c04231e0c63d8ea1b1571b2e622dc907"
+  integrity sha512-EZm8HnPOJLk+wJFHLEPtJVt0J0MeZAb7jGH0aVen+yYTQufdUaSLyljweWqqHLwWQRHxhhMv1bPIlWOKha51og==
   dependencies:
     minimatch "^3.1.2"
 
