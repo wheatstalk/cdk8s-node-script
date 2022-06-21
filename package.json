@@ -45,9 +45,9 @@
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "@wheatstalk/cdk8s-self-cleanup": "^0.0.145",
+    "@wheatstalk/cdk8s-self-cleanup": "^0.0.146",
     "cdk8s": "2.0.0",
-    "cdk8s-cli": "^1.1.31",
+    "cdk8s-cli": "^1.1.32",
     "constructs": "10.0.0",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -73,7 +73,7 @@
     "constructs": "^10.0.0"
   },
   "dependencies": {
-    "esbuild": "^0.14.46",
+    "esbuild": "^0.14.47",
     "execa": "^4",
     "fs-extra": "^10.1.0"
   },
